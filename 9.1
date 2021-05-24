@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+float ke (float m, float v){
+	float e = (m*v*v)/2;
+	return e;
+}
+
+int main(){
+	float kl,vt;
+	printf ("Nhap khoi luong m= ");
+	scanf ("%f",&kl);
+	printf ("Nhap van toc v=");
+	scanf ("%f",&vt);
+	printf ("ke=(%.3f*%.3f^2)/2=%.3f",kl,vt,ke(kl,vt));
+}
